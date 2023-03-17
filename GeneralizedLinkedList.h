@@ -8,15 +8,15 @@ typedef struct Node {
         int atom;
         struct Node *list;
     }atomList;
-    struct Node *tall;
+    struct Node *next;
 }Node;
 
 int addAtom(Node **list, int atom);
 int addList(Node **list, Node **subList);
 Node* head(Node *list);
 Node* tail(Node *list);
-void showGeneralizedList(Node *list);
-boolean search(Node *list, int atom);
+void show(Node *list);
+bool search(Node *list, int atom);
 int depth(Node *list);
 
 #endif
